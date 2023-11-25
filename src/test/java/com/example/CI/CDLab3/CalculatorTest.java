@@ -21,9 +21,9 @@ public class CalculatorTest {
 
     @Test
     void testAdd() {
-        int a = -5;
-        int b = -4;
-        int expectedValue = -5;
+        int a = 2;
+        int b = 4;
+        int expectedValue = 6;
         int actualValue = Calculator.add(a,b);
 
         // Assert - check if actual value is equal to expected value
@@ -35,7 +35,7 @@ public class CalculatorTest {
     @Test
     void testSubtract() {
         int a = -2;
-        int b = -1;
+        int b = -2;
         int expectedValue = 0;
         int actualValue = calculator.subtract(a,b);
 
@@ -46,7 +46,7 @@ public class CalculatorTest {
     @Test
     void testMultiply() {
 
-        int a = 3;
+        int a = 2;
         int b = -5;
         int expectedValue = -10;
         int actualValue = calculator.multiply(a,b);
@@ -58,7 +58,7 @@ public class CalculatorTest {
     @Test
     void testDivide() {
 
-        int a = 11;
+        int a = 10;
         int b = -2;
         int expectedValue = -5;
         double actualValue = calculator.divide(a,b);
@@ -82,7 +82,7 @@ public class CalculatorTest {
     @Test
     void testSquareRootOf() {
 
-        int expectedValue = 2;
+        int expectedValue = 3;
         double actualValue = calculator.squareRootOf(9);
 
         Assertions.assertEquals(expectedValue,actualValue);
