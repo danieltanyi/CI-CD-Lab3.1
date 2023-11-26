@@ -22,7 +22,7 @@ public class ValidatorTest {
     void itShouldValidatePhoneNumber() {
 
         //given
-        String phoneNumber = "0793321039";
+        String phoneNumber = "0793321039111111";
         //when
         boolean expected = Validator.isPhoneNumberValid(phoneNumber);
         //then
@@ -59,7 +59,7 @@ public class ValidatorTest {
     @DisplayName("Should pass with valid email")
     void itShouldValidateEmail() {
         //given
-        String email = "sample@gmail.com";
+        String email = "samplegmail.com";
         //when
         boolean expected = Validator.isEmailValid(email);
         //then
